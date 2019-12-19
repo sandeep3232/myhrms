@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddEmplyoeeActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="ADD EMPLOYEE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblemp_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter Emplyoee Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></TextView>
+
+    <EditText
+        android:id="@+id/empid_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee ID"
+        app:layout_constraintTop_toBottomOf="@+id/lblemp_TV"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="114dp"></EditText>
+
+    <EditText
+        android:id="@+id/empname_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Name"
+        app:layout_constraintTop_toBottomOf="@+id/empid_edt"
+        tools:ignore="NotSibling"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="114dp"></EditText>
+
+    <EditText
+        android:id="@+id/empmail_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Email"
+        app:layout_constraintTop_toBottomOf="@+id/empname_edt"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="114dp"></EditText>
+
+    <EditText
+        android:id="@+id/empmob_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Mobile No"
+        app:layout_constraintTop_toBottomOf="@+id/empmail_edt"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="114dp"></EditText>
+
+    <EditText
+        android:id="@+id/empaddress_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Address"
+        app:layout_constraintTop_toBottomOf="@+id/empmob_edt"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="114dp"></EditText>
+
+    <EditText
+        android:id="@+id/empage_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Age"
+        app:layout_constraintTop_toBottomOf="@+id/empaddress_edt"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="114dp"></EditText>
+
+    <EditText
+        android:id="@+id/emppin_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee 4 Digit Login Pin"
+        app:layout_constraintTop_toBottomOf="@+id/empage_edt"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="114dp"></EditText>
+
+    <EditText
+        android:id="@+id/emppwd_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Password"
+        app:layout_constraintTop_toBottomOf="@+id/emppin_edt"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="114dp"></EditText>
+
+
+    <RadioGroup
+        android:id="@+id/sex_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/emppwd_edt">
+
+        <RadioButton
+            android:id="@+id/male_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/female_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"></RadioButton>
+
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/designation_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:entries="@array/designation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sex_rg"></Spinner>
+
+    <Button
+        android:id="@+id/empsubmit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="SUBMIT"
+        app:layout_constraintTop_toBottomOf="@+id/designation_spinner"></Button>
+
+</LinearLayout>
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmployeeDetailActivity">
+
+    <TextView
+        android:id="@+id/empName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/empEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/empMob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mob">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/empAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/empGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/empDesignation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Designation">
+    </TextView>
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit"></Button>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"></Button>
+
+
+
+
+
+</LinearLayout>
